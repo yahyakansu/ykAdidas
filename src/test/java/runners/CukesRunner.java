@@ -12,8 +12,8 @@ import utilities.ExtentReport;
         plugin = {"html:target/cucumber-reports","json:target/cukesreport.json"},
         features = "src/test/resources/features",
         glue = "stepDefs",
-        dryRun = false,
-        tags = "@newAccounts"
+        dryRun = true,
+        tags = "@shoe"
 )
 public class CukesRunner {
     @AfterClass
