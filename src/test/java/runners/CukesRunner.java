@@ -12,7 +12,7 @@ import utilities.ExtentReport;
         plugin = {"html:target/cucumber-reports","json:target/cukesreport.json"},
         features = "src/test/resources/features",
         glue = "stepDefs",
-        dryRun = true,
+        dryRun = false,
         tags = "@shoe"
 )
 public class CukesRunner {
