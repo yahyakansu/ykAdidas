@@ -11,7 +11,7 @@ import utilities.ExtentReport;
 @CucumberOptions(
         plugin = {"html:target/cucumber-reports","json:target/cukesreport.json"},
         features = "src/test/resources/features",
-        glue = "stepDefs",
+        glue = "step_defs",
         dryRun = false,
         tags = "@shoe"
 )
