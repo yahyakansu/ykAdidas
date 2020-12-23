@@ -3,8 +3,13 @@ package step_defs;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.apache.log4j.Logger;
+import pages.HomePage;
 
 public class YouthShoesSteps {
+    private final Logger log = Logger.getLogger(this.getClass());
+    HomePage homePage = new HomePage();
+
     @Given("I am on the adidas home page")
     public void i_am_on_the_adidas_home_page() {
 
